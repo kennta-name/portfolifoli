@@ -1,0 +1,138 @@
+/* 全体 */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #1e1e1e;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+/* コンテンツ幅固定 */
+#wrap {
+    width: 760px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* 見出し */
+#head h1 {
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+/* ログアウトリンク */
+div a {
+    color: #bbb;
+    font-size: 14px;
+}
+div a:hover {
+    color: #fff;
+}
+
+/* 投稿フォーム */
+form dl dt {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+form textarea {
+    width: 100%;
+    background: #1c1c1c;
+    border: 1px solid #555;
+    color: #eee;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+form input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #444;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+form input[type="submit"]:hover {
+    background: #666;
+}
+
+/* 投稿部分 */
+.msg {
+    background: #262626;
+    border: 1px solid #333;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
+}
+
+.msg img {
+    border-radius: 50%;
+    border: 2px solid #555;
+}
+
+/* テキスト部分 */
+.msg p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.msg .name {
+    color: #7cb8ff;
+    margin-left: 10px;
+}
+
+/* 日付と返信元リンク */
+.msg .day {
+    font-size: 12px;
+    color: #aaa;
+}
+.msg .day a {
+    color: #7cb8ff;
+}
+.msg .day a:hover {
+    text-decoration: underline;
+}
+
+/* Reリンク */
+.msg a {
+    color: #77aaff;
+}
+.msg a:hover {
+    color: #aaccff;
+}
+
+/* 削除リンク */
+.msg a[style] {
+    color: #ff6464 !important;
+}
+.msg a[style]:hover {
+    text-decoration: underline;
+}
+
+/* ページング */
+ul.paging {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+ul.paging li a {
+    color: #77aaff;
+}
+ul.paging li {
+    color: #555;
+}
+ul.paging li a:hover {
+    text-decoration: underline;
+}
